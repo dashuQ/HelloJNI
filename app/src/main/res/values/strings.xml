@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">HelloJNI</string>
     <string name="jni_test">测试调用JNI</string>
-    <string name="jni_int_add">int运算</string>
+    <string name="jni_int_add">add(int x,int y)int运算</string>
+    <string name="str_appd">updateStr(String str)String拼接</string>
     <string name="unsupported_operation">不支持的操作</string>
 </resources>

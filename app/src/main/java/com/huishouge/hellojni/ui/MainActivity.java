@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements MyRecyclerViewAda
         data = new ArrayList<String>();
         data.add(getString(R.string.jni_test));
         data.add(getString(R.string.jni_int_add));
-//        data.add(getString(R.string.des_encryption));
+        data.add(getString(R.string.str_appd));
 //        data.add(getString(R.string.md5_encryption));
 //        data.add(getString(R.string.base64_encryption));
 //        data.add(getString(R.string.yh_encryption));
@@ -79,6 +79,8 @@ public class MainActivity extends AppCompatActivity implements MyRecyclerViewAda
                     ToastUtils.show(this, jniUtil.helloFromC());
                 } else if (str.equals(getString(R.string.jni_int_add))) {
                     ToastUtils.show(this, "1+2=" + jniUtil.add(1, 2));
+                }else if (str.equals(getString(R.string.str_appd))) {
+                    ToastUtils.show(this, "String拼接" + jniUtil.updateStr("i m from java"));
                 }
 //                else if (str.equals(getString(R.string.md5_encryption))) {
 ////                    startActivity(new Intent(MainActivity.this,RSAEncryptionActivity.class));

@@ -15,6 +15,22 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_huishouge_hellojni_jni_JniUtil_helloFromC
   (JNIEnv *, jobject);
 
+/*
+ * Class:     com_huishouge_hellojni_jni_JniUtil
+ * Method:    add
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_com_huishouge_hellojni_jni_JniUtil_add
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     com_huishouge_hellojni_jni_JniUtil
+ * Method:    updateStr
+ * Signature: (Ljava/lang/String;)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_huishouge_hellojni_jni_JniUtil_updateStr
+  (JNIEnv *, jobject, jstring);
+
 #ifdef __cplusplus
 }
 #endif
